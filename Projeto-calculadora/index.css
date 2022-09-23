@@ -1,0 +1,116 @@
+:root{
+    --color-one: #3d3266;
+    --color-two: #221c38;
+    --color-three: #b82222;
+    --color-four: #dadada;
+    --color-five: #9c3c3c;
+    --color-six: #20ec75;
+}
+html{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif!important;
+}
+body{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, var(--color-five) 0%, var(--color-six) 100%);
+}
+.container_calculadora{
+    width: 570px;
+    padding: 32px;
+    height: 600px;
+    background-color: var(--color-one);
+    border-radius: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.calc_header{
+    width: 20px;
+}
+.btn_theme{
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: var(--color-three);
+    box-shadow: inset 3px -2px 0px 1px rgba(66, 26, 82, 0.336);;
+    color: var(--color-four);;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 5px;
+    margin-top: -20px;
+}
+.btn_theme img{
+    width: 30px;
+    margin: 0 auto;
+}
+.calc_content{
+    width: 570px;
+    margin: 0 auto;
+    height: 88px;
+    background-color: var(--color-two);
+    color: var(--color-four);;
+    border-radius: 15px;
+    font-size: 50px;
+    text-align: right;
+}
+.calc_content p{
+    margin: 0;
+    max-width: 540px;
+    overflow-x: scroll;
+}
+.calc_buttons{
+    background-color: var(--color-two);
+    padding: 16px;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+.btn_row{
+    margin-top: 24px;
+    display: flex;
+    gap: 16px;
+}
+.btn_row:first-child{
+    margin-top: 0px;
+}
+.btn{
+    width: 130px;
+    height: 65px;
+    background-color: var(--color-four);;
+    color: var(--color-two);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    font-size: 20px;
+    box-shadow: inset 6px -4px 0px 1px rgba(66, 26, 82, 0.336);;
+    cursor: pointer;
+}
+.btn:active{
+    box-shadow: inset -2px 2px 0px 4px rgba(66, 26, 82, 0.336);;
+}
+.btn p{
+    margin: 0;
+}
+.btn:active p{
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.del{
+    background-color:var(--color-one);
+    color: var(--color-four);;
+}
+.reset{
+    width: 260px;
+    background-color:var(--color-one);
+    color: var(--color-four);;
+}
+.result{
+    width: 260px;
+    background-color:var(--color-three);
+    color: var(--color-four);;
+}
+/*--theme-two--*/
